@@ -1,0 +1,17 @@
+plugins {
+    id "java"
+    id "io.freefair.lombok" version "4.1.1"
+    id "com.github.johnrengelman.shadow" version "5.1.0"
+}
+
+version '1.0.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'net.portswigger.burp.extender', name: 'burp-extender-api', version: '2.1'
+}
